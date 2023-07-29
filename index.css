@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "Poppins";
+    src:
+        local("Poppins"),
+        url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src:
+        local("Poppins"),
+        url("./assets/fonts/Poppins-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src:
+        local("Poppins"),
+        url("./assets/fonts/Poppins-ExtraBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src:
+        local("Poppins"),
+        url("./assets/fonts/Poppins-Italic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src:
+        local("Poppins"),
+        url("./assets/fonts/Poppins-BoldItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src:
+        local("Poppins"),
+        url("./assets/fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 800;
+}
+
+  
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Courier, monospace;
+    font-size: 32px;
+    font-weight: 400;
+    height: 100%;
+    background-color: hsl(0, 0%, 94%);
+}
+
+#root {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#root > main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.attribution { 
+    width: 100%;
+    height: 0.5rem;
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
