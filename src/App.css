@@ -28,7 +28,7 @@
     margin-right: 0.5rem;
 }
 
-.form-container > label {
+.input-container > label {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -36,7 +36,7 @@
     font-weight: 700;
 }
 
-.form-container input {
+.input-container input {
     width: 80%;
     height: 1.6rem;
     padding: 0 0.3rem;
