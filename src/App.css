@@ -47,6 +47,30 @@
     border-image-outset: none;
 }
 
+.input-container.error-input > div {
+    line-height: 0.6;
+}
+
+.input-container.error-input,
+.input-container.error-input label {
+    color: hsl(0, 100%, 67%);
+}
+
+.input-container.error-input input:focus,
+.input-container.error-input input:focus-within,
+.input-container.error-input input:focus-visible,
+.input-container.error-input input:active,
+.input-container.error-input input {
+    border: 1px solid hsl(0, 100%, 67%);
+    color: 1px solid hsl(0, 100%, 67%);
+    outline: none;
+}
+
+span.error-span {
+    color: hsl(0, 100%, 67%);
+    font-size: 12px;
+}
+
 .border {
     display: flex;
     align-items: center;
