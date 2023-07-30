@@ -24,7 +24,7 @@ export default class Form extends Component {
 
             const dateObj = new Date();
             let todayDay = dateObj.getDate();
-            let todayMonth = dateObj.getMonth();
+            let todayMonth = dateObj.getMonth()+1;
             let todayYear = dateObj.getFullYear();
             let dayErrorClassName = '';
             let monthErrorClassName = '';
@@ -91,14 +91,14 @@ export default class Form extends Component {
                 yearErrorMessage,
             }, () => {
 
-                const { day, month, year, dayErrorClassName, monthErrorClassName, yearErrorClassName } = this.state;
+                const { dayErrorClassName, monthErrorClassName, yearErrorClassName } = this.state;
                 if (
                     dayErrorClassName.length === 0 && 
                     monthErrorClassName.length === 0 && 
                     yearErrorClassName.length === 0
                 ) {
                     const { onCalculateAge } = this.props;
-                    onCalculateAge(`${year}-${month}-${day}`);
+                    onCalculateAge(typedDate);
                 }
             });
         });

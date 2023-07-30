@@ -32,7 +32,7 @@ export default class Card extends Component {
         days = isNaN(days) ? "--" : days;
         months = isNaN(months) ? "--" : months;
         years = isNaN(years) ? "--" : years;
-        
+
         this.setState({
             ageDay: days,
             ageMonth: months,
