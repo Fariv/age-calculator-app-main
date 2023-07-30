@@ -78,9 +78,10 @@ export default class Form extends Component {
             console.log(new Date(todayDate));
             if (new Date(typedDate) >= new Date(todayDate)) {
     
-                dayErrorClassName = 'error-input';
-                dayErrorMessage = 'Must be in the past';
+                yearErrorClassName = 'error-input';
+                yearErrorMessage = 'Must be in the past';
             }
+
             this.setState({
                 dayErrorClassName,
                 monthErrorClassName,
@@ -88,6 +89,17 @@ export default class Form extends Component {
                 dayErrorMessage,
                 monthErrorMessage,
                 yearErrorMessage,
+            }, () => {
+
+                const { day, month, year, dayErrorClassName, monthErrorClassName, yearErrorClassName } = this.state;
+                if (
+                    dayErrorClassName.length === 0 && 
+                    monthErrorClassName.length === 0 && 
+                    yearErrorClassName.length === 0
+                ) {
+                    const { onCalculateAge } = this.props;
+                    onCalculateAge(`${year}-${month}-${day}`);
+                }
             });
         });
     }
