@@ -74,8 +74,6 @@ export default class Form extends Component {
     
             }
 
-            console.log(new Date(typedDate));
-            console.log(new Date(todayDate));
             if (new Date(typedDate) >= new Date(todayDate)) {
     
                 yearErrorClassName = 'error-input';
